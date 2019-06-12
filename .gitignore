@@ -27,6 +27,7 @@ project.xcworkspace
 build/
 .idea
 .gradle
+android/gradle.properties
 local.properties
 *.iml
 
@@ -39,7 +40,6 @@ yarn-error.log
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
 
 # fastlane
 #
@@ -54,3 +54,8 @@ buck-out/
 
 # Bundle artifact
 *.jsbundle
+ios/connected2mobile.xcodeproj/project.pbxproj
+ios/Pods/Pods.xcodeproj/project.pbxproj
+ios/connected2mobile.xcodeproj/project.pbxproj
+ios/connected2mobile/Info.plist
+android/app/src/main/assets/index.android.bundle
