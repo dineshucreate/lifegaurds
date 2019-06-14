@@ -38,6 +38,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* lifegaurdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* lifegaurdsTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		893731EC22B35ED700125DE2 /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 893731E822B35EC400125DE2 /* libReactNativeConfig.a */; };
 		896DFC6E22B12CD900727C84 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 892CCE6B22B0D1B1009A8CC1 /* libCodePush.a */; };
 		89D15FFB22B21841006BEDBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89D15FFA22B21841006BEDBF /* GoogleService-Info.plist */; };
 		89D1607722B229CE006BEDBF /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D1607622B229BD006BEDBF /* libRNFirebase.a */; };
@@ -329,6 +330,20 @@
 			remoteGlobalIDString = F886647B1F4ADB500036D01B;
 			remoteInfo = "CodePush-tvOS";
 		};
+		893731E722B35EC400125DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 893731B922B35EC400125DE2 /* ReactNativeConfig.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB2648DF1C7BE17A00B8F155;
+			remoteInfo = ReactNativeConfig;
+		};
+		893731E922B35EC400125DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 893731B922B35EC400125DE2 /* ReactNativeConfig.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DF7F6AC203AA09B00D0EAB7;
+			remoteInfo = "ReactNativeConfig-tvOS";
+		};
 		89D1607522B229BD006BEDBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 89D1604A22B229BC006BEDBF /* RNFirebase.xcodeproj */;
@@ -387,6 +402,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		893731B922B35EC400125DE2 /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeConfig.xcodeproj; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; };
 		89D15FF922B21561006BEDBF /* lifeguards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lifeguards.entitlements; sourceTree = "<group>"; };
 		89D15FFA22B21841006BEDBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "lifegaurds/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89D1604A22B229BC006BEDBF /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
@@ -413,6 +429,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893731EC22B35ED700125DE2 /* libReactNativeConfig.a in Frameworks */,
 				89D1607722B229CE006BEDBF /* libRNFirebase.a in Frameworks */,
 				896DFC6E22B12CD900727C84 /* libCodePush.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
@@ -610,6 +627,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				893731B922B35EC400125DE2 /* ReactNativeConfig.xcodeproj */,
 				89D160BC22B24B48006BEDBF /* RCTPushNotification.xcodeproj */,
 				89D1604A22B229BC006BEDBF /* RNFirebase.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
@@ -680,6 +698,15 @@
 			children = (
 				892CCE6B22B0D1B1009A8CC1 /* libCodePush.a */,
 				892CCE6D22B0D1B1009A8CC1 /* libCodePush.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		893731BA22B35EC400125DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				893731E822B35EC400125DE2 /* libReactNativeConfig.a */,
+				893731EA22B35EC400125DE2 /* libReactNativeConfig-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -895,6 +922,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 893731BA22B35EC400125DE2 /* Products */;
+					ProjectRef = 893731B922B35EC400125DE2 /* ReactNativeConfig.xcodeproj */;
 				},
 				{
 					ProductGroup = 89D1604B22B229BC006BEDBF /* Products */;
@@ -1178,6 +1209,20 @@
 			remoteRef = 892CCE6C22B0D1B1009A8CC1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		893731E822B35EC400125DE2 /* libReactNativeConfig.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactNativeConfig.a;
+			remoteRef = 893731E722B35EC400125DE2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		893731EA22B35EC400125DE2 /* libReactNativeConfig-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactNativeConfig-tvOS.a";
+			remoteRef = 893731E922B35EC400125DE2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		89D1607622B229BD006BEDBF /* libRNFirebase.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1431,6 +1476,9 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios",
 				);
 				INFOPLIST_FILE = lifegaurds/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1460,6 +1508,9 @@
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios",
 				);
 				INFOPLIST_FILE = lifegaurds/Info.plist;
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INFOPLIST_PREFIX_HEADER = "${BUILD_DIR}/GeneratedInfoPlistDotEnv.h";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import codePush from 'react-native-code-push';
 import firebase from 'react-native-firebase';
-
+import Config from 'react-native-config'
 export default class App extends Component {
 
   componentDidMount = () => {
+    alert(Config.API_URL);
     codePush.sync({
       updateDialog: true,
       installMode: codePush.InstallMode.IMMEDIATE
