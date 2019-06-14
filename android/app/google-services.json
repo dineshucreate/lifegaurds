@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "733567689136",
+    "firebase_url": "https://lifeguards-uat.firebaseio.com",
+    "project_id": "lifeguards-uat",
+    "storage_bucket": "lifeguards-uat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733567689136:android:687b55beec859509",
+        "android_client_info": {
+          "package_name": "com.lifeguards.uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733567689136-u7vflbq6qbfuvkrllmiecnjnabfjnqee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_FIpcZBRph_ajchc-tZQ1wNi7Vrt2rJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733567689136-u7vflbq6qbfuvkrllmiecnjnabfjnqee.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "733567689136-eh375jve32gppeonvoh5ii76jtupgv3b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lifeguards.uat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
