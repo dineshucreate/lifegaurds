@@ -1,0 +1,12 @@
+
+# iOS Settings
+app_identifier("com.lifeguards.uat")
+#apple_id("dev@ucreate.it") # Your Apple email address
+#itc_team_id("117698968") # App Store Connect Team ID
+#team_id("5796Z84ZBE") # Developer Portal Team ID
+
+# Android Settings
+package_name("com.lifeguards.uat")
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
