@@ -1,6 +1,7 @@
 
 # this should be the folder name under `ios` for your project
 project_name = 'lifegaurds'
+project_name_new = 'lifeguards'
 
 # NOTE: This is meant to be run on CI where it changes everything before building the app.
 # Usage:
@@ -18,7 +19,7 @@ lane :prep_release_type do
   suffix = type
   # assumes identifier is defined in Appfile
   app_id = CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
-  new_app_id = "#{app_id}.#{suffix}"
+  new_app_id = "#{app_id}#{suffix}"
   display_name = ENV['RN_DISPLAY_NAME'] || type.capitalize
 
   UI.message "\n\nSetting app identifier to: #{new_app_id}"
@@ -27,7 +28,7 @@ lane :prep_release_type do
   # update ios indentifier and display name
   update_info_plist(
     plist_path: "#{project_name}/Info.plist",
-    xcodeproj: "./ios/#{project_name}.xcodeproj",
+    xcodeproj: "./ios/#{project_name_new}.xcodeproj",
     display_name: display_name,
     app_identifier: new_app_id
   )

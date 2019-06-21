@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: update_info_plist" time="0.028596">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: set_value_in_build" time="0.004495">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: update_android_strings" time="0.026201">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

@@ -15,20 +15,11 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### beta
+### prep_release_type
 ```
-fastlane beta
+fastlane prep_release_type
 ```
-
-
-----
-
-## iOS
-### ios beta
-```
-fastlane ios beta
-```
-Push a new beta build to TestFlight
+Updates the app identifier, display name and icon for uat, demo, and production releases
 
 ----
 
